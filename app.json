@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Spicey Brain",
+    "slug": "spicey-brain",
+    "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#6C63FF"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.spiceybrain.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to allow professionals to attach photos to notes.",
+        "NSPhotoLibraryUsageDescription": "Used to allow sharing of reports and images.",
+        "NSUserNotificationsUsageDescription": "Used to send reminders for routines and medications."
+      }
+    },
+    "android": {
+      "package": "com.spiceybrain.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6C63FF"
+      },
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.POST_NOTIFICATIONS"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sharing",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#6C63FF"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "spicey-brain"
+      }
+    }
+  }
+}
