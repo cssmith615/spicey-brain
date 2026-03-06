@@ -3,9 +3,6 @@
     "name": "Spicey Brain",
     "slug": "spicey-brain",
     "version": "1.0.0",
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -54,8 +51,9 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "spicey-brain"
+        "projectId": "f7a12cbb-0feb-4bd7-bd97-46080eb8f35c"
       }
-    }
+    },
+    "owner": "chuckssmith"
   }
 }
