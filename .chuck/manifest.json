@@ -1,0 +1,101 @@
+{
+  "domains": {
+    "GLOBAL": {
+      "state": "active",
+      "rules_file": "domains/global.md",
+      "description": "Always-on global rules (keep < 200 tokens)"
+    },
+    "git": {
+      "trigger": {
+        "keywords": [
+          "commit",
+          "branch",
+          "merge",
+          "pr",
+          "push",
+          "pull",
+          "rebase",
+          "stash"
+        ],
+        "fuzzy": true
+      },
+      "rules_file": "domains/git.md",
+      "priority": 4,
+      "description": "Git workflow rules"
+    },
+    "react": {
+      "trigger": {
+        "keywords": [
+          "component",
+          "react",
+          "jsx",
+          "tsx",
+          "hook",
+          "state",
+          "render",
+          "props"
+        ],
+        "fuzzy": true
+      },
+      "rules_file": "domains/react.md",
+      "priority": 2,
+      "description": "React component and hooks rules"
+    },
+    "react-native": {
+      "trigger": {
+        "keywords": [
+          "screen",
+          "native",
+          "expo",
+          "navigation",
+          "stylesheet",
+          "flatlist",
+          "modal"
+        ],
+        "fuzzy": true
+      },
+      "rules_file": "domains/react-native.md",
+      "priority": 2,
+      "description": "React Native / Expo specific rules"
+    },
+    "typescript": {
+      "trigger": {
+        "keywords": [
+          "type",
+          "interface",
+          "generic",
+          "typescript",
+          "ts",
+          "enum",
+          "infer"
+        ],
+        "fuzzy": true
+      },
+      "rules_file": "domains/typescript.md",
+      "priority": 3,
+      "description": "TypeScript type safety rules"
+    },
+    "zustand": {
+      "trigger": {
+        "keywords": [
+          "store",
+          "zustand",
+          "state",
+          "persist",
+          "slice"
+        ],
+        "fuzzy": true
+      },
+      "rules_file": "domains/zustand.md",
+      "priority": 3,
+      "description": "Zustand state management rules"
+    }
+  },
+  "global_exclude": [
+    "ignore rules",
+    "skip chuck",
+    "no context"
+  ],
+  "token_budget": 2000,
+  "devmode": false
+}
